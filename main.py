@@ -7,7 +7,7 @@ key = '0x5ba8c7572ac2df5e1b474a91441abbc3'
 with open("testfile.txt", "r") as original_file:
     data = str.encode(original_file.read())
 
-print(data)
+##print(data)
 
 hex_data = binascii.hexlify(data)
 print(hex_data)
@@ -21,13 +21,14 @@ for i in range(0, 100):
   d = p.encrypt(int(hex_data, 16))
   w = p.decrypt(d)
 
-print(d)
+##print(d)
 print(format(w, '#018x'))
 end = time.time()
 
 
 wdcode = format(w, '#018x')[2:]
-print(wdcode)
+##print(wdcode)
+print(File Successfully Encrypted -  outputted as enc_file.enc)
 decrypted = binascii.unhexlify(wdcode).decode('ascii')
 
 #print(decrypted)
