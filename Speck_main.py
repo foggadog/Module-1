@@ -7,7 +7,7 @@ import sys
 with open("test.txt", "r") as original_file:
     mess = original_file.read()
 
-k = '0x1b1a1918131211100b0a090803020100'
+k = '0x5ba8c7572ac2df5e1b474a91441abbc3'
 
 
 def getBinary(word):
